@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Atlas | Ingeniería de Redes Global</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .accent-border { border-left: 4px solid #06b6d4; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-2xl font-bold text-slate-800">GRUPO <span class="text-cyan-600">ATLAS</span></div>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-slate-600">
+                <a href="#servicios" class="hover:text-cyan-600">Servicios</a>
+                <a href="#nosotros" class="hover:text-cyan-600">Nosotros</a>
+                <a href="#portfolio" class="hover:text-cyan-600">Portfolio</a>
+                <a href="https://wa.me/TU_NUMERO" class="bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700 transition">AUDITORÍA .RSC</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gradient text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 space-y-6 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Ingeniería de Redes <br><span class="text-cyan-400">Sin Fronteras</span></h1>
+                <p class="text-lg text-slate-300">Consultoría Senior, Despliegue FTTH/GPON y Optimización Core para ISPs a nivel mundial. Liderados por el Ing. Ceferino Cesar Fernandez.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#portfolio" class="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 rounded-lg font-bold transition">Ver Casos de Éxito</a>
+                    <a href="#contacto" class="border border-white hover:bg-white hover:text-slate-900 px-8 py-3 rounded-lg font-bold transition text-center">Contacto Técnico</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                <i class="fa-solid fa-globe text-[200px] text-cyan-500/20 animate-pulse"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-20 max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestras Especialidades Carrier-Class</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg accent-border">
+                <i class="fa-solid fa-network-wired text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Core Networking</h3>
+                <p class="text-slate-600">Optimización de BGP, OSPF y MPLS en entornos MikroTik, Cisco y Huawei.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg accent-border">
+                <i class="fa-solid fa-microchip text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">FTTH / GPON</h3>
+                <p class="text-slate-600">Diseño de redes ópticas pasivas, configuración de OLTs V-SOL y Huawei.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg accent-border">
+                <i class="fa-solid fa-tower-broadcast text-4xl text-cyan-600 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Radioenlaces</h3>
+                <p class="text-slate-600">Backhaul de alta capacidad con Cambium Networks, Ubiquiti y Mimosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-slate-100 py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Presencia Global y Casos de Éxito</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col md:flex-row">
+                    <div class="p-6 text-left">
+                        <span class="text-cyan-600 font-bold">MÉXICO</span>
+                        <h4 class="text-xl font-bold mt-1">Grupo Radecom</h4>
+                        <p class="text-slate-600 text-sm mt-2">Reingeniería total de Core y despliegue de infraestructura de fibra y wireless.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col md:flex-row">
+                    <div class="p-6 text-left">
+                        <span class="text-cyan-600 font-bold">COLOMBIA</span>
+                        <h4 class="text-xl font-bold mt-1">Nodos Regionales</h4>
+                        <p class="text-slate-600 text-sm mt-2">Interconexión de nodos rurales de difícil acceso con alta disponibilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-slate-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto text-center space-y-6">
+            <h2 class="text-2xl font-bold">¿Listo para escalar su infraestructura?</h2>
+            <p class="text-slate-400">Operaciones globales dirigidas por el Ing. Cesar Fernandez.</p>
+            <div class="flex justify-center space-x-6 text-3xl">
+                <a href="https://wa.me/TU_NUMERO" class="hover:text-cyan-400"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:tuemail@gmail.com" class="hover:text-cyan-400"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="text-xs text-slate-500 mt-8">© 2026 GRUPO ATLAS - Ingeniería de Telecomunicaciones Global</p>
+        </div>
+    </footer>
+
+</body>
+</html>
