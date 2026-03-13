@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Global | Grupo Atlas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-card:hover { transform: scale(1.02); transition: 0.4s; }
+        .tech-tag { background: rgba(6, 182, 212, 0.1); color: #0891b2; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 700; border: 1px solid rgba(6, 182, 212, 0.2); }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <nav class="bg-white shadow-lg sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html"><img src="logo.jpg" alt="Grupo Atlas" class="h-16 w-auto"></a>
+            <div class="hidden md:flex items-center space-x-8 font-bold text-slate-600 uppercase text-xs tracking-widest">
+                <a href="index.html" class="hover:text-cyan-600 transition">Inicio</a>
+                <a href="servicios.html" class="hover:text-cyan-600 transition">Servicios</a>
+                <a href="nosotros.html" class="hover:text-cyan-600 transition">Nosotros</a>
+                <a href="portfolio.html" class="text-cyan-600">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-slate-900 py-24 px-6 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <i class="fa-solid fa-diagram-project text-[300px] absolute -right-20 -top-20"></i>
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase italic tracking-tighter" data-aos="zoom-in">Ingeniería en Acción</h1>
+            <p class="text-xl text-slate-400 font-light">Proyectos de infraestructura crítica desplegados con éxito en el mercado internacional.</p>
+        </div>
+    </header>
+
+    <section class="py-24 max-w-7xl mx-auto px-6 space-y-20">
+
+        <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="text-cyan-600 font-black tracking-widest text-sm uppercase">MÉXICO</span>
+                    <div class="h-px bg-cyan-600 flex-grow"></div>
+                </div>
+                <h2 class="text-4xl font-black mb-6">Grupo Radecom: Reingeniería de Core e ISP Metropolitano</h2>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    Transformación de una red saturada en una infraestructura carrier-class de alta disponibilidad. Implementamos protocolos dinámicos y migración a tecnología óptica de última generación.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="tech-tag">MIKROTIK CCR</span>
+                    <span class="tech-tag">BGP MULTIHOMING</span>
+                    <span class="tech-tag">V-SOL OLT</span>
+                    <span class="tech-tag">OSPF/MPLS</span>
+                    <span class="tech-tag">FIBER OPTIC</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl border-l-4 border-cyan-500 shadow-sm">
+                    <p class="italic text-slate-500 font-medium">"La intervención de Grupo Atlas permitió un escalamiento masivo de usuarios con una reducción del 40% en latencia y fallos de red."</p>
+                </div>
+            </div>
+            <div class="bg-slate-900 rounded-3xl p-10 flex justify-center items-center">
+                <i class="fa-solid fa-network-wired text-[150px] text-cyan-500/20"></i>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse" data-aos="fade-up">
+            <div class="md:order-last">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="text-cyan-600 font-black tracking-widest text-sm uppercase">COLOMBIA</span>
+                    <div class="h-px bg-cyan-600 flex-grow"></div>
+                </div>
+                <h2 class="text-4xl font-black mb-6">Redes Regionales: Backhaul de Alta Capacidad</h2>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    Despliegue de enlaces troncales en geografía desafiante para interconectar comunidades aisladas. Diseño de radiofrecuencia avanzado para máxima penetración en zonas rurales.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="tech-tag">CAMBIUM NETWORKS</span>
+                    <span class="tech-tag">MIMOSA B5</span>
+                    <span class="tech-tag">PTP BACKHAUL</span>
+                    <span class="tech-tag">UBIQUITI UISP</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl border-l-4 border-slate-900 shadow-sm">
+                    <p class="italic text-slate-500 font-medium">Capacidad de transporte superior a los 800Mbps en enlaces PtP de larga distancia.</p>
+                </div>
+            </div>
+            <div class="bg-slate-800 rounded-3xl p-10 flex justify-center items-center">
+                <i class="fa-solid fa-tower-broadcast text-[150px] text-cyan-500/20"></i>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="text-cyan-600 font-black tracking-widest text-sm uppercase">ARGENTINA</span>
+                    <div class="h-px bg-cyan-600 flex-grow"></div>
+                </div>
+                <h2 class="text-4xl font-black mb-6">Proyecto Nacional de Conectividad Educativa</h2>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                    Gestión técnica y consultoría para el mantenimiento de redes de conectividad en instituciones públicas. 5+ años de operación continua asegurando acceso de alta calidad.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="tech-tag">MANAGED SERVICES</span>
+                    <span class="tech-tag">NETWORK AUDITING</span>
+                    <span class="tech-tag">CISCO SYSTEMS</span>
+                    <span class="tech-tag">QOS OPTIMIZATION</span>
+                </div>
+            </div>
+            <div class="bg-cyan-900/10 rounded-3xl p-10 flex justify-center items-center">
+                <i class="fa-solid fa-graduation-cap text-[150px] text-cyan-600/20"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-slate-100 py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-sm font-black uppercase tracking-[0.3em] text-slate-400 mb-12">Partners Tecnológicos Globales</h3>
+            <div class="flex flex-wrap justify-center gap-16 grayscale opacity-50 contrast-125">
+                <span class="text-3xl font-black italic">MikroTik</span>
+                <span class="text-3xl font-black">HUAWEI</span>
+                <span class="text-3xl font-black">V-SOL</span>
+                <span class="text-3xl font-black">CISCO</span>
+                <span class="text-3xl font-black">UBIQUITI</span>
+                <span class="text-3xl font-black">CAMBIUM</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto text-center border-t border-slate-800 pt-12">
+            <img src="logo.jpg" alt="Logo" class="h-20 mx-auto mb-8 grayscale brightness-200 opacity-30">
+            <p class="text-slate-400 mb-2 uppercase tracking-widest text-sm font-bold">© 2026 GRUPO ATLAS - Ingeniería de Telecomunicaciones Global</p>
+            <p class="text-xs text-slate-600 italic">Desarrollado por el Departamento de I+D e Ingeniería Web de Grupo Atlas</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>
